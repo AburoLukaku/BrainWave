@@ -736,3 +736,22 @@ body.nav-active {
   border-radius: var(--radius-6);
   transition: var(--transition);
   outline: none;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 12px 8px; /* Less padding on smaller screens */
+  }
+
+  .navbar {
+    padding: 10px 8px; /* Less padding for navbar on smaller screens */
+  }
+
+  .navbar-item {
+    padding: 6px 8px; /* Less padding for navbar items */
+  }
+
+  .navbar-link {
+    font-size: 1.2rem; /* Smaller font size for links on mobile */
+  }
+}
