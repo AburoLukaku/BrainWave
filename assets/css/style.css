@@ -293,40 +293,20 @@ body.nav-active {
   }
 }
 
-.header .btn {
-  display: none;
-}
-
 .header {
-
   position: absolute;
-
   top: 0;
-
   left: 0;
-
   width: 100%;
-
   padding: 16px 8px; /* Reduced padding */
-
   z-index: 4;
-
 }
+
 .header.active {
   background-color: var(--white);
   position: fixed;
   box-shadow: var(--shadow-2);
   animation: headerActive 0.5s ease forwards;
-}
-
-@keyframes headerActive {
-  0% {
-    transform: translateY(-100%);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
 }
 
 .header .container,
@@ -336,19 +316,19 @@ body.nav-active {
   align-items: center;
 }
 
-.nav-open-btn,.nav-close-btn {
-  font-size: 20px;
+.nav-open-btn,
+.nav-close-btn {
+  font-size: 18px; /* Reduced font size */
 }
 
 .navbar {
-  /* position: fixed; */
   top: 0;
   left: -320px;
   max-width: 320px;
   width: 100%;
   background-color: var(--white);
-  height: 100vh;
-  padding: 40px 16px;
+  height: auto; /* Changed from 100vh to auto */
+  padding: 20px 16px; /* Reduced padding */
   z-index: 2;
   transition: 0.25s var(--cubic-in);
   visibility: hidden; 
@@ -360,26 +340,20 @@ body.nav-active {
   transform: translateX(320px);
 }
 
-.navbar-top {
-  margin-block-end: 34px;
-}
-
-.nav-close-btn ion-icon {
-  --ionicon-stroke-width: 35px;
-}
-
-.navbar-item:not(:last-child) {
-  border-block-end: 1px solid var(--black_10);
+.navbar-item {
+  padding: 8px 12px; /* Adjust padding for navbar items */
 }
 
 .navbar-link {
-  padding-block: 8px;
+  padding: 6px 12px; /* Adjust padding for links */
+  font-size: 1.4rem; /* Smaller font size for links */
   transition: var(--transition);
 }
 
 .navbar-link:is(:hover, :focus-visible) {
   color: var(--oxford-blue);
 }
+
 
 .overlay {
   position: fixed;
