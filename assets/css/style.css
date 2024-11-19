@@ -298,14 +298,20 @@ body.nav-active {
 }
 
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding-block: 32px;
-  z-index: 4;
-}
 
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  padding: 16px 8px; /* Reduced padding */
+
+  z-index: 4;
+
+}
 .header.active {
   background-color: var(--white);
   position: fixed;
