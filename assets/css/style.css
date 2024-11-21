@@ -9,6 +9,7 @@
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
   --black_10: hsla(0, 0%, 0%, 0.1);
+
   --ff-gilroy: "Gilroy", "Arial", sans-serif;
 
   --headline-sm: 2.4rem;
@@ -290,7 +291,7 @@ body.nav-active {
   top: 0;
   left: 0;
   width: 100%;
-  padding-block: 32px;
+  padding-block: 0px;
   z-index: 4;
 }
 
@@ -298,7 +299,7 @@ body.nav-active {
   background-color: var(--white);
   position: fixed;
   box-shadow: var(--shadow-2);
-  animation: headerActive 0.5s ease forwards;
+  animation: headerActive 0.8s ease forwards;
 }
 
 @keyframes headerActive {
@@ -342,7 +343,7 @@ body.nav-active {
 }
 
 .navbar-link {
-  padding-block: 8px;
+  padding-block: 0px;
   transition: var(--transition);
 }
 
@@ -678,7 +679,7 @@ body.nav-active {
      * spacing
      */
 
-    --section-padding: 120px;
+    --section-padding: 100px;
 
   }
 
@@ -706,13 +707,11 @@ body.nav-active {
    }
 
    .navbar {
-    all: unset; /* Reset all styles */
     display: flex; /* Enable flexbox */
-    justify-content: space-between; /* Space out items */
     padding: 10px; /* Add padding */
     background-color: #f8f8f8; /* Set a background color */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
-}
+    }
 
 .navbar .logo {
     font-size: 1.5em; /* Style for logo */
